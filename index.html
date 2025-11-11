@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسابقة الحيوانات التفاعلية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="startScreen" class="screen active">
+        <div class="container">
+            <div class="header">
+                <h1 class="main-title">🐾 مسابقة الحيوانات 🐾</h1>
+                <p class="subtitle">هل تحب الحيوانات؟ تعال نلعب معاً!</p>
+            </div>
+
+            <div class="animals-grid" id="animalsGrid">
+                <!-- Animals will be inserted here by JavaScript -->
+            </div>
+
+            <div class="button-container">
+                <button class="kids-button success-btn large" id="startBtn">
+                    ابدأ المسابقة! 🚀
+                </button>
+            </div>
+
+            <div class="decorative-emojis">
+                <span class="emoji-bounce" style="animation-delay: 0s;">🦁</span>
+                <span class="emoji-bounce" style="animation-delay: 0.2s;">🐘</span>
+                <span class="emoji-bounce" style="animation-delay: 0.4s;">🦒</span>
+                <span class="emoji-bounce" style="animation-delay: 0.6s;">🐵</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quizScreen" class="screen">
+        <div class="container">
+            <div class="quiz-header">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <p class="question-counter" id="questionCounter">السؤال 1 من 10</p>
+            </div>
+
+            <div class="question-card">
+                <h2 class="question-text" id="questionText">
+                    <!-- Question will be inserted here -->
+                </h2>
+            </div>
+
+            <div class="answers-grid" id="answersGrid">
+                <!-- Answers will be inserted here by JavaScript -->
+            </div>
+
+            <div class="feedback" id="feedback">
+                <!-- Feedback will be shown here -->
+            </div>
+
+            <div class="score-display">
+                <p class="score-text">النقاط: <span id="currentScore">0</span>/10</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Screen -->
+    <div id="resultsScreen" class="screen">
+        <div class="container results-container">
+            <div class="results-card" id="resultsCard">
+                <!-- Results will be inserted here by JavaScript -->
+            </div>
+
+            <div class="button-container">
+                <button class="kids-button success-btn large" id="restartBtn">
+                    العب مرة أخرى! 🎮
+                </button>
+            </div>
+
+            <div class="decorative-emojis">
+                <span class="emoji-bounce" style="animation-delay: 0s;">🎈</span>
+                <span class="emoji-bounce" style="animation-delay: 0.2s;">🎉</span>
+                <span class="emoji-bounce" style="animation-delay: 0.4s;">🎊</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
